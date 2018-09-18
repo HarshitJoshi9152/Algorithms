@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Breadth First Search</title>
-    <script src="node.js"></script>
-    <script src="graph.js"></script>
-    <script src="main.js"></script>
     <style>
     h1{
         font-family: 'Courier New', Courier, monospace;
@@ -20,38 +17,38 @@
 <body>
     <h1>Breadth First Search</h1>
     <script>
-    // let rawData = undefined;
-function get(src, object = false){
-    const xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function(){
-        // console.log(xhttp.readyState);
-        if(xhttp.readyState == 4 && xhttp.status == 200){
-            // console.log(xhttp.responseText);
-            let container = xhttp.responseText;
-            if(object){
-                // console.log("obejct");
-                try{
-                container = JSON.parse(container);
-                // console.log("parsed");
-                }
-                catch(e){
-                    console.log(e);
-                    if(e == ""){
-                        console.error("broken JSON");
-                    }
-                }
-            }
-            // console.info("returning");
-            // console.log("container is filed with ::",container);
-            k = container;
-            return JSON.parse(xhttp.responseText);
-        }
-    }
-    xhttp.open("GET",src,true);
-    xhttp.send();
-}
-// get("./data/data.json",true);
-// console.log(rawData);
+    // function get(src, object = false){
+    //     const xhttp = new XMLHttpRequest();
+    //     xhttp.onreadystatechange = function(){
+    //         // console.log(xhttp.readyState);
+    //         if(xhttp.readyState == 4 && xhttp.status == 200){
+    //             // console.log(xhttp.responseText);
+    //             let container = xhttp.responseText;
+    //             if(object){
+    //                 // console.log("obejct");
+    //                 try{
+    //                 container = JSON.parse(container);
+    //                 // console.log("parsed");
+    //                 }
+    //                 catch(e){
+    //                     console.log(e);
+    //                     if(e == ""){
+    //                         console.error("broken JSON");
+    //                     }
+    //                 }
+    //             }
+    //             // console.info("returning");
+    //             // console.log("container is filed with ::",container);
+    //             k = container;
+    //             return JSON.parse(xhttp.responseText);
+    //         }
+    //     }
+    //     xhttp.open("GET",src,true);
+    //     xhttp.send();
+    // }
     </script>
+    <script src="node.js"></script>
+    <script src="graph.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
